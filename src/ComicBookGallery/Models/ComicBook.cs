@@ -11,12 +11,12 @@ namespace ComicBookGallery.Models
         public string SeriesTitle { get; set; }
         public int IssueNumber { get; set; }
         public string DescriptionHtml { get; set; }
-        public Artist [] Artists { get; set; }
+        public Artist[] Artists { get; set; }
         public bool Favourite { get; set; }
 
         public string DisplayText
         {
-            get 
+            get
             {
                 return SeriesTitle + " #" + IssueNumber;
             }
@@ -31,4 +31,5 @@ namespace ComicBookGallery.Models
             }
         }
     }
+    
 }
